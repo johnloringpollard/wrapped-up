@@ -22,8 +22,8 @@ Then open `http://127.0.0.1:4173`.
 
 The site has no analytics, cookies, form submissions, or visitor data storage. Google Fonts provides the three typefaces used by the design.
 
-## Before adding a direct contact action
+## Meeting details
 
-The current invitation uses person-to-person contact because no verified group email, meeting time, address, form endpoint, or confidentiality policy was supplied. Confirm those details before adding them to the public page.
+The public page currently uses the owner's requested best-guess meeting details: Thursdays at 7:00 PM, `[Church name / address]`, and `hello@wrappedupgroup.org`. Confirm and replace these working values when final details are available.
 
 The four circles are mentioned within the accountability section without inventing a detailed framework that the group has not confirmed.

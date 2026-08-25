@@ -710,6 +710,75 @@ p {
   font-size: 0.88rem;
 }
 
+.connection {
+  padding-block: clamp(4rem, 7vw, 5.25rem);
+  border-top: 1px solid var(--line);
+  background: var(--panel-deep);
+}
+
+.connection-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(24rem, 1.05fr);
+  align-items: start;
+  gap: clamp(3.5rem, 8vw, 7rem);
+}
+
+.connection-copy h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 3.2vw, 2.55rem);
+}
+
+.connection-copy > p:not(.eyebrow) {
+  max-width: 34rem;
+  color: var(--paper-dim);
+  font-size: 1rem;
+}
+
+.connection-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.meeting-card {
+  margin: 0;
+  padding: 1rem 2rem;
+  border: 1px solid var(--line);
+  background: var(--panel-raised);
+}
+
+.meeting-card > div {
+  display: grid;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 7rem 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.meeting-card > div:last-child {
+  border-bottom: 0;
+}
+
+.meeting-card dt {
+  color: var(--paper-dim);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.meeting-card dd {
+  margin: 0;
+  color: var(--paper);
+  font-size: 0.98rem;
+  text-align: right;
+}
+
+.meeting-card a {
+  color: var(--ember-bright);
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.25rem;
+}
+
 footer {
   padding-block: 2.4rem;
   border-top: 1px solid var(--line);
@@ -774,7 +843,8 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .commitment-grid {
+  .commitment-grid,
+  .connection-grid {
     grid-template-columns: 1fr;
   }
 
@@ -815,7 +885,8 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .commitment-grid {
+  .commitment-grid,
+  .connection-grid {
     gap: 3rem;
   }
 
@@ -926,6 +997,19 @@ footer {
     font-size: 1.35rem;
   }
 
+  .meeting-card {
+    padding-inline: 1.25rem;
+  }
+
+  .meeting-card > div {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .meeting-card dd {
+    text-align: left;
+  }
+
   .footer-inner {
     grid-template-columns: 1fr;
   }
@@ -967,6 +1051,8 @@ footer {
   .beliefs,
   .scripture-quote,
   .commitment aside,
+  .connection,
+  .meeting-card,
   footer {
     background: #fff;
     color: #111;
