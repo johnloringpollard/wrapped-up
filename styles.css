@@ -933,15 +933,8 @@ p {
 .form-submit {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1.5rem;
-}
-
-.form-submit p {
-  max-width: 23rem;
-  margin-bottom: 0;
-  color: #77736a;
-  font-size: 0.7rem;
 }
 
 .form-submit button {
