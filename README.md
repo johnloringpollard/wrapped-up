@@ -28,8 +28,6 @@ The site has no analytics, cookies, form submissions, or visitor data storage. G
 
 ## Meeting details
 
-The public page currently uses the owner's requested best-guess meeting details: Thursdays at 7:00 PM, `[Church name / address]`, and `hello@wrappedupgroup.org`. Confirm and replace these working values when final details are available.
-
-The placeholder location is excluded from search snippets and structured data until it is verified.
+The group meets Mondays at 7:30 PM at 3995 Hunt Club Rd N #2, Jacksonville, FL 32224. Public contact details are `info.wrappedupfl@gmail.com` and `904-327-7626`.
 
 The four circles are mentioned within the accountability section without inventing a detailed framework that the group has not confirmed.
