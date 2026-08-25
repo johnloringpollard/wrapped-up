@@ -428,21 +428,50 @@ p {
   font-size: 1.03rem;
 }
 
+.who-sidebar {
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.sidebar-label {
+  margin: 0;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ember);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .promises {
   margin-bottom: 0;
-  border-top: 1px solid var(--line);
+  counter-reset: promise;
 }
 
 .promises > div {
-  padding: 1.3rem 0;
+  display: grid;
+  padding: 1.35rem 1.5rem;
   border-bottom: 1px solid var(--line);
+  grid-template-columns: 2rem 1fr;
+  gap: 0.25rem 0.9rem;
+  counter-increment: promise;
+}
+
+.promises > div::before {
+  color: var(--rust);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  content: "0" counter(promise);
+  grid-row: 1 / span 2;
+  letter-spacing: 0.05em;
 }
 
 .promises dt {
-  margin-bottom: 0.35rem;
-  color: var(--ember-bright);
+  color: var(--paper);
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.08rem;
 }
 
 .promises dd {
@@ -452,18 +481,25 @@ p {
 }
 
 .confidentiality {
-  display: flex;
-  margin-top: 2.5rem;
-  justify-content: flex-end;
+  padding: 1.2rem 1.5rem;
+  background: var(--panel-deep);
 }
 
 .confidentiality p {
-  width: min(100%, 36rem);
   margin-bottom: 0;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
   color: #77736a;
   font-size: 0.75rem;
+}
+
+.confidentiality strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--paper-dim);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .callout-grid {
@@ -1110,6 +1146,7 @@ footer {
   .scripture-quote,
   .commitment,
   .connection,
+  .who-sidebar,
   .meeting-card,
   footer {
     background: #fff;
