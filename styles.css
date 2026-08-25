@@ -412,8 +412,7 @@ p {
 .section-copy h2,
 .section-head h2,
 .format-intro h2,
-.beliefs-heading h2,
-.commitment h2 {
+.beliefs-heading h2 {
   margin-bottom: 1.25rem;
   font-size: clamp(2rem, 3.5vw, 2.55rem);
   line-height: 1.08;
@@ -421,13 +420,11 @@ p {
 
 .section-copy > p:not(.eyebrow),
 .section-head > p:not(.eyebrow),
-.format-intro > p:not(.eyebrow),
-.commitment-grid > div > p:not(.eyebrow) {
+.format-intro > p:not(.eyebrow) {
   color: var(--paper-dim);
 }
 
-.section-copy > p:not(.eyebrow),
-.commitment-grid > div > p:not(.eyebrow) {
+.section-copy > p:not(.eyebrow) {
   font-size: 1.03rem;
 }
 
@@ -681,33 +678,78 @@ p {
   background: var(--bg);
 }
 
-.commitment-grid {
+.commitment-inner {
+  text-align: center;
+}
+
+.commitment-heading {
+  max-width: 49rem;
+  margin-inline: auto;
+}
+
+.commitment-heading h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.5rem, 5vw, 4.15rem);
+  line-height: 1.04;
+}
+
+.commitment-heading > p:last-child {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: var(--paper-dim);
+  font-size: 1.02rem;
+}
+
+.commitment-rhythm {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
-  align-items: center;
-  gap: clamp(3.5rem, 9vw, 8rem);
+  margin: 3.25rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  text-align: left;
 }
 
-.commitment-grid > div > p:not(.eyebrow) {
-  max-width: 38rem;
-  margin-bottom: 0;
+.commitment-rhythm li {
+  display: flex;
+  min-height: 7rem;
+  padding: 1.35rem;
+  border-left: 1px solid var(--line);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.commitment aside {
-  padding: 2rem;
-  border: 1px solid var(--line);
-  background: var(--panel);
+.commitment-rhythm li:first-child {
+  border-left: 0;
 }
 
-.commitment aside h3 {
-  margin-bottom: 0.75rem;
-  font-size: 1.8rem;
+.commitment-rhythm span {
+  color: var(--ember);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
 }
 
-.commitment aside p:last-child {
-  margin-bottom: 0;
+.commitment-rhythm strong {
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.commitment-listen {
+  max-width: 47rem;
+  margin: 2rem auto 0;
   color: var(--paper-dim);
   font-size: 0.88rem;
+}
+
+.commitment-listen strong {
+  color: var(--paper);
+  font-weight: 500;
 }
 
 .connection {
@@ -843,7 +885,6 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .commitment-grid,
   .connection-grid {
     grid-template-columns: 1fr;
   }
@@ -885,7 +926,6 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .commitment-grid,
   .connection-grid {
     gap: 3rem;
   }
@@ -997,6 +1037,18 @@ footer {
     font-size: 1.35rem;
   }
 
+  .commitment-rhythm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commitment-rhythm li:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .commitment-rhythm li:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+
   .meeting-card {
     padding-inline: 1.25rem;
   }
@@ -1050,7 +1102,7 @@ footer {
   .callout,
   .beliefs,
   .scripture-quote,
-  .commitment aside,
+  .commitment,
   .connection,
   .meeting-card,
   footer {
