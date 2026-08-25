@@ -845,6 +845,143 @@ p {
   text-underline-offset: 0.25rem;
 }
 
+.interest-form-layout {
+  display: grid;
+  margin-top: clamp(3.5rem, 7vw, 5.25rem);
+  padding-top: clamp(3.5rem, 7vw, 5.25rem);
+  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0, 0.75fr) minmax(28rem, 1.25fr);
+  align-items: start;
+  gap: clamp(3.5rem, 8vw, 7rem);
+}
+
+.interest-form-copy h3 {
+  margin-bottom: 1.15rem;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.interest-form-copy > p:last-child {
+  max-width: 26rem;
+  margin-bottom: 0;
+  color: var(--paper-dim);
+}
+
+.interest-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.interest-form label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.interest-form label > span {
+  color: var(--paper-dim);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.interest-form label small {
+  color: #716d64;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.interest-form input,
+.interest-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--panel-raised);
+  color: var(--paper);
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.interest-form input {
+  min-height: 3.2rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.interest-form textarea {
+  min-height: 8.5rem;
+  padding: 0.8rem 0.85rem;
+  resize: vertical;
+}
+
+.interest-form input:focus,
+.interest-form textarea:focus {
+  border-color: var(--ember);
+  outline: 0;
+  box-shadow: 0 0 0 1px var(--ember);
+}
+
+.interest-form textarea::placeholder {
+  color: #716d64;
+}
+
+.form-message,
+.form-submit {
+  grid-column: 1 / -1;
+}
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.form-submit p {
+  max-width: 23rem;
+  margin-bottom: 0;
+  color: #77736a;
+  font-size: 0.7rem;
+}
+
+.form-submit button {
+  min-height: 3.1rem;
+  padding: 0.75rem 1.3rem;
+  border: 1px solid var(--ember);
+  border-radius: 2px;
+  background: var(--ember);
+  color: var(--bg);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+  white-space: nowrap;
+}
+
+.form-submit button:hover {
+  background: var(--ember-bright);
+  transform: translateY(-2px);
+}
+
+.form-success {
+  display: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(200, 137, 66, 0.5);
+  background: rgba(200, 137, 66, 0.08);
+  color: var(--paper);
+  font-size: 0.88rem;
+}
+
+.form-success:target {
+  display: block;
+}
+
+.form-honey {
+  display: none;
+}
+
 footer {
   padding-block: 2.4rem;
   border-top: 1px solid var(--line);
@@ -909,7 +1046,8 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .connection-grid {
+  .connection-grid,
+  .interest-form-layout {
     grid-template-columns: 1fr;
   }
 
@@ -930,7 +1068,8 @@ footer {
   .who-grid,
   .format-layout,
   .beliefs .wrap,
-  .connection-grid {
+  .connection-grid,
+  .interest-form-layout {
     gap: 3rem;
   }
 
@@ -1069,6 +1208,24 @@ footer {
 
   .meeting-card dd {
     text-align: left;
+  }
+
+  .interest-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-message,
+  .form-submit {
+    grid-column: auto;
+  }
+
+  .form-submit {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .form-submit button {
+    width: 100%;
   }
 
   .footer-inner {

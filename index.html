@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260825-7">
+  <link rel="stylesheet" href="styles.css?v=20260825-8">
 
   <script type="application/ld+json">
   {
@@ -362,6 +362,45 @@
             <dd>All men, any stage of the fight</dd>
           </div>
         </dl>
+      </div>
+
+      <div class="wrap interest-form-layout" id="contact-form">
+        <div class="interest-form-copy">
+          <p class="eyebrow">Reach out</p>
+          <h3>Start with a simple hello.</h3>
+          <p>Share only what we need to contact you. You do not need to tell your story here.</p>
+        </div>
+
+        <div>
+          <p class="form-success" id="form-sent" role="status">Thank you. Someone from Wrapped Up will contact you personally.</p>
+          <form class="interest-form" action="https://formsubmit.co/info.wrappedupfl@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New Wrapped Up website inquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://johnloringpollard.github.io/wrapped-up/#form-sent">
+            <input type="hidden" name="_url" value="https://johnloringpollard.github.io/wrapped-up/#contact-form">
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+            <label>
+              <span>Your name</span>
+              <input type="text" name="Name" autocomplete="name" required>
+            </label>
+
+            <label>
+              <span>Email or phone</span>
+              <input type="text" name="Contact information" required>
+            </label>
+
+            <label class="form-message">
+              <span>Short note <small>Optional</small></span>
+              <textarea name="Message" rows="4" maxlength="1000" placeholder="How can we help you take the next step?"></textarea>
+            </label>
+
+            <div class="form-submit">
+              <p>Do not include sensitive or explicit details. Submissions are delivered through FormSubmit.</p>
+              <button type="submit">Request a conversation</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

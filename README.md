@@ -24,7 +24,9 @@ Then open `http://127.0.0.1:4173`.
 
 ## Privacy
 
-The site has no analytics, cookies, form submissions, or visitor data storage. Google Fonts provides the three typefaces used by the design.
+The site has no analytics, cookies, or local visitor data storage. Google Fonts provides the three typefaces used by the design.
+
+The contact form is delivered through FormSubmit to `info.wrappedupfl@gmail.com`. FormSubmit requires no account. The recipient must click the activation link sent after the first submission before regular inquiries are delivered.
 
 ## Meeting details
 
