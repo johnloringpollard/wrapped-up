@@ -279,7 +279,7 @@ p {
 .hero-seal {
   position: relative;
   display: flex;
-  width: min(100%, 17.5rem);
+  width: min(115%, 25.5rem);
   aspect-ratio: 1;
   margin-inline: auto;
   padding: 2.3rem;
@@ -854,6 +854,12 @@ footer {
 
 .closing em {
   color: var(--ember);
+}
+
+@media (min-width: 861px) and (max-width: 920px) {
+  .hero-seal {
+    width: min(105%, 20rem);
+  }
 }
 
 @media (max-width: 860px) {
