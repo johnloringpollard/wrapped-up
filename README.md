@@ -16,9 +16,10 @@ Then open `http://127.0.0.1:4173`.
 
 - `index.html` contains the page structure and final copy.
 - `styles.css` contains the complete responsive visual system.
-- `assets/mark.svg` and `assets/favicon.svg` are original cord-based brand marks created for the site.
+- `assets/wrapped-up-logo.png` is the primary supplied logo used in the hero.
+- `assets/wrapped-cross.png` and its smaller variants provide the compact brand mark used in the header, footer, and browser icons.
 - `assets/social-card.png` is the 1200 × 630 preview image used by iMessage and social platforms.
-- `assets/logo-512.png` and `assets/apple-touch-icon.png` provide raster brand icons.
+- `assets/wrapped-up-logo-512.png` provides the square organization logo used by search metadata.
 - `robots.txt` and `sitemap.xml` provide search-engine crawl and discovery guidance.
 
 ## Privacy

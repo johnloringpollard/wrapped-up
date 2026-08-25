@@ -154,6 +154,12 @@ p {
   font-weight: 600;
 }
 
+.brand img,
+.footer-brand img {
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
 .site-header nav ul {
   display: flex;
   margin: 0;
@@ -203,9 +209,9 @@ p {
   position: relative;
   display: grid;
   padding-block: clamp(4.75rem, 8vw, 6rem) clamp(4rem, 7vw, 5.1rem);
-  grid-template-columns: minmax(0, 1fr) 17.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(21rem, 24rem);
   align-items: center;
-  gap: 3.5rem;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .hero-copy {
@@ -276,69 +282,51 @@ p {
   color: var(--ember-bright);
 }
 
-.hero-seal {
+.hero-logo {
   position: relative;
-  display: flex;
-  width: min(115%, 25.5rem);
-  aspect-ratio: 1;
-  margin-inline: auto;
-  padding: 2.3rem;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  margin: 0;
+  justify-self: center;
   text-align: center;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25);
 }
 
-.hero-seal::before,
-.hero-seal::after {
+.hero-logo::before {
   position: absolute;
-  border: 1px solid rgba(200, 137, 66, 0.28);
+  z-index: -1;
+  inset: 8%;
   border-radius: 50%;
+  background: rgba(200, 137, 66, 0.14);
+  box-shadow: 0 0 6rem 2rem rgba(200, 137, 66, 0.11);
   content: "";
 }
 
-.hero-seal::before {
-  inset: 0.65rem;
-}
-
-.hero-seal::after {
-  inset: 1.05rem;
-  border-color: rgba(238, 231, 216, 0.1);
-}
-
-.hero-seal img {
+.hero-logo img {
   position: relative;
-  z-index: 1;
-  width: 4.5rem;
-  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter: drop-shadow(0 1.75rem 2.5rem rgba(0, 0, 0, 0.35));
 }
 
-.hero-seal .verse-ref {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 0.55rem;
-  font-size: 0.62rem;
-}
-
-.hero-seal blockquote {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 0.4rem;
-  font-size: 1.22rem;
-  font-style: italic;
-  line-height: 1.35;
-}
-
-.hero-seal > strong {
-  position: relative;
-  z-index: 1;
-  color: var(--ember-bright);
+.hero-logo figcaption {
+  max-width: 21rem;
+  margin: 0.9rem auto 0;
+  color: var(--paper-dim);
   font-family: var(--serif);
-  font-size: 1.02rem;
+  font-size: 0.86rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.hero-logo figcaption span {
+  margin-right: 0.45rem;
+  color: var(--ember);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-style: normal;
   font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .trust-line {
@@ -892,12 +880,6 @@ footer {
   color: var(--ember);
 }
 
-@media (min-width: 861px) and (max-width: 920px) {
-  .hero-seal {
-    width: min(105%, 20rem);
-  }
-}
-
 @media (max-width: 860px) {
   .nav-inner {
     padding-block: 0.7rem;
@@ -935,30 +917,10 @@ footer {
     gap: 2.5rem;
   }
 
-  .hero-seal {
-    width: 10.75rem;
+  .hero-logo {
+    width: min(100%, 18rem);
     margin-left: 0;
-    padding: 1.35rem;
     grid-row: 1;
-  }
-
-  .hero-seal img {
-    width: 3.15rem;
-    margin-bottom: 0.65rem;
-  }
-
-  .hero-seal .verse-ref {
-    margin-bottom: 0.35rem;
-    font-size: 0.5rem;
-  }
-
-  .hero-seal blockquote {
-    margin-bottom: 0.25rem;
-    font-size: 0.95rem;
-  }
-
-  .hero-seal > strong {
-    font-size: 0.78rem;
   }
 
   .hero-copy {
@@ -1030,8 +992,13 @@ footer {
     right: -24rem;
   }
 
-  .hero-seal {
-    width: min(100%, 10.75rem);
+  .hero-logo {
+    width: min(100%, 15.5rem);
+  }
+
+  .hero-logo figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.75rem;
   }
 
   .actions {

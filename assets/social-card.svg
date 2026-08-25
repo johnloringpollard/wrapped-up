@@ -3,13 +3,7 @@
   <path d="M810 82c82-54 146-29 198 30s97 69 166 12" fill="none" stroke="#8b4a2b" stroke-width="2" opacity=".32"/>
   <path d="M784 104c86 57 151 36 205-20s103-62 181-3" fill="none" stroke="#c88942" stroke-width="2" opacity=".26"/>
 
-  <g transform="translate(88 60) scale(1.25)" fill="none">
-    <circle cx="32" cy="32" r="30.5" stroke="#4a4e48"/>
-    <path d="M10 32c8.5-12 15-12 22 0s13.5 12 22 0" stroke="#d28a4a" stroke-width="3" stroke-linecap="round"/>
-    <path d="M10 25c8.5 12 15 12 22 0s13.5-12 22 0" stroke="#ede7da" stroke-width="3" stroke-linecap="round"/>
-    <path d="M10 39c8.5-12 15-12 22 0s13.5 12 22 0" stroke="#8e4f37" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="32" cy="32" r="4" fill="#111412" stroke="#d28a4a"/>
-  </g>
+  <image href="wrapped-cross.png" x="72" y="38" width="118" height="118"/>
 
   <text x="190" y="112" fill="#eee7d8" font-family="Georgia, serif" font-size="34" font-weight="600">
     Wrapped <tspan fill="#e2aa63">Up</tspan>
