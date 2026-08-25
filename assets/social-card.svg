@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#14171b"/>
+  <path d="M810 82c82-54 146-29 198 30s97 69 166 12" fill="none" stroke="#8b4a2b" stroke-width="2" opacity=".32"/>
+  <path d="M784 104c86 57 151 36 205-20s103-62 181-3" fill="none" stroke="#c88942" stroke-width="2" opacity=".26"/>
+
+  <g transform="translate(88 60) scale(1.25)" fill="none">
+    <circle cx="32" cy="32" r="30.5" stroke="#4a4e48"/>
+    <path d="M10 32c8.5-12 15-12 22 0s13.5 12 22 0" stroke="#d28a4a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 25c8.5 12 15 12 22 0s13.5-12 22 0" stroke="#ede7da" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 39c8.5-12 15-12 22 0s13.5 12 22 0" stroke="#8e4f37" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="4" fill="#111412" stroke="#d28a4a"/>
+  </g>
+
+  <text x="190" y="112" fill="#eee7d8" font-family="Georgia, serif" font-size="34" font-weight="600">
+    Wrapped <tspan fill="#e2aa63">Up</tspan>
+  </text>
+
+  <text x="90" y="232" fill="#c88942" font-family="Courier New, monospace" font-size="18" font-weight="700" letter-spacing="4">A BROTHERHOOD, NOT A PROGRAM</text>
+  <text x="90" y="326" fill="#eee7d8" font-family="Georgia, serif" font-size="64" font-weight="600">You were not built</text>
+  <text x="90" y="404" fill="#eee7d8" font-family="Georgia, serif" font-size="64" font-weight="600">
+    to fight this <tspan fill="#e2aa63" font-style="italic" font-weight="400">alone.</tspan>
+  </text>
+  <text x="90" y="474" fill="#aaa293" font-family="Arial, sans-serif" font-size="25">A confidential Christian brotherhood for men.</text>
+
+  <line x1="90" y1="532" x2="1110" y2="532" stroke="#33383e"/>
+  <text x="90" y="580" fill="#aaa293" font-family="Courier New, monospace" font-size="16" letter-spacing="2">NO JUDGMENT</text>
+  <circle cx="342" cy="574" r="3" fill="#8b4a2b"/>
+  <text x="370" y="580" fill="#aaa293" font-family="Courier New, monospace" font-size="16" letter-spacing="2">CONFIDENTIAL</text>
+  <circle cx="620" cy="574" r="3" fill="#8b4a2b"/>
+  <text x="648" y="580" fill="#aaa293" font-family="Courier New, monospace" font-size="16" letter-spacing="2">CHRIST-CENTERED</text>
+</svg>
